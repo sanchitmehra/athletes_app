@@ -1,0 +1,20 @@
+<label style="margin-left: 330px;" >List of All Athletes</label><br><br>
+<div class="list-group container" ng-repeat="athlete in athletes " >
+    <div >
+            
+        <a style = "text-align: center; cursor: pointer;" class="list-group-item list-group-item-action flex-column align-items-start ">
+          <div class="d-flex w-100 justify-content-between">
+               <h5 class="mb-1"> Username:  <b>{{athlete.username}}</b></h5>
+               <h5 class="mb-1"> Nationality:  <b>{{athlete.nationality}}</b></h5>
+          </div>
+          <p class="mb-1">Gender: <b>{{athlete.gender}}</b></p>
+         
+          <p class="mb-1">Team: <b>{{athlete.team}}</b></p>
+          <p class="mb-1">Sport: <b>{{athlete.sport}}</b></p>
+          <p class="mb-1">Sport: <b>{{athlete.facebook_handle}}</b></p>
+          <p class="mb-1">Sport: <b>{{athlete.twitter_handle}}</b></p>
+          <p class="mb-1">Sport: <b>{{athlete.insta_handle}}</b></p>
+          
+        </a>
+    </div>
+      </div>

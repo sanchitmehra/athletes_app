@@ -1,0 +1,53 @@
+<form class="container">
+        <label for="formGroupExampleInput" style = "color: red;">Athlete's Basic Information</label><br><br>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Name: {{basicInfo.username}} </label>
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Nationality:   {{basicInfo.nationality}}</label>
+        </div>
+        <div class="form-group">
+                <label for="formGroupExampleInput2">Gender: {{basicInfo.gender}} </label>
+                 </div><div class="form-group">
+                    <label for="formGroupExampleInput2">Date Of birth: {{basicInfo.dateofbirth }}</label>
+                   </div>
+                </div><div class="form-group">
+                        <label for="formGroupExampleInput2">Team: {{basicInfo.team}}</label>
+                      </div>
+
+                     
+      </form>
+
+      <form class="container">
+            <label for="formGroupExampleInput" style = "color: red;">Athlete's About Information</label><br><br>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Description: {{about.description}} </label>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Location: {{about.location}}</label>
+            </div>
+            <div class="form-group">
+                    <label for="formGroupExampleInput2">Sports: {{about.sports}} </label>
+                   </div>
+    
+                         
+          </form>
+
+          <form class="container">
+                <label for="formGroupExampleInput" style = "color: red;">Athlete's Social Media Information</label><br><br>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Facebook: {{socialMedia.facebook}} </label>
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Twitter: {{socialMedia.twitter}}</label>
+                </div>
+                <div class="form-group">
+                        <label for="formGroupExampleInput2">Instagram: {{socialMedia.instagram}} </label>
+                       </div>
+        
+                       <button  style = "color: blue" ng-click = "editbasicinfo()" >Edit Information</button>
+                       <button style = " color: blue" ng-click = "save()">Save Information</button>
+              </form>
+          <br>
+
+        

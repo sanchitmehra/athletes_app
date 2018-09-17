@@ -1,0 +1,38 @@
+<form class="container">
+    <label style="margin-left: 330px;" >Basic Information Section</label><br><br>
+
+        <div class="form-group">
+          <label for="formGroupExampleInput">Name</label>
+          <input type="text" class="form-control" ng-model = "info.username" id="formGroupExampleInput" placeholder="Enter your Name" ng-minlength="1" ng-required>
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Nationality</label>
+          <input type="text" class="form-control" ng-model = "info.nationality" id="formGroupExampleInput2" placeholder="Enter your Nationality" ng-required="true">
+        </div>
+        <div class="form-group">
+                <label for="formGroupExampleInput2">Gender</label><br>
+                
+                <label for="formGroupExampleInput2">Male:</label>
+  
+                <input type="radio" name="gender" value="male" ng-model="info.gender">
+                
+                <label style = "margin-left: 20px;"for="formGroupExampleInput2">Female:</label>
+
+                <input type="radio" name="gender" value="female" ng-model="info.gender">
+                  
+              </div><div class="form-group">
+                    <label for="formGroupExampleInput2">Date Of birth</label>
+                    <input type="date" class="form-control" ng-model = "info.dateofbirth" id="formGroupExampleInput2" placeholder="Enter your Date of Birth" ng-required="true">
+                  </div>
+                </div>
+                <br>
+                      <div>
+                          <label for="formGroupExampleInput2">Team</label>
+                          <select ng-model="info.team" ng-options="x for x in team" select ng-required>
+                            </select><br><br>
+      
+      
+                      </div>
+                      <div ng--if=""></div>
+                                            <button style = "margin-left: 330px;" ng-click = "click()">Next</button>
+      </form>
